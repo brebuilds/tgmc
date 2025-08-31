@@ -40,6 +40,7 @@ const HeroSection = () => {
               variant="glass" 
               size="xl" 
               className="animate-pulse-glow"
+              speed={8}
             />
             <Button variant="outline" size="xl" className="border-white/30 text-white hover:bg-white/10">
               Learn More
