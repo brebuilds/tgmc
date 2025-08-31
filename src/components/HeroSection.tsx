@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import ShinyText from '@/components/ui/ShinyText';
+import ShinyButton from '@/components/ui/ShinyButton';
 import heroImage from '@/assets/hero-hospital.jpg';
 
 const HeroSection = () => {
@@ -35,7 +35,12 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
-            <ShinyText text="Explore the Vision" className="text-4xl font-bold cursor-pointer" />
+            <ShinyButton 
+              text="Explore the Vision" 
+              variant="glass" 
+              size="xl" 
+              className="animate-pulse-glow"
+            />
             <Button variant="outline" size="xl" className="border-white/30 text-white hover:bg-white/10">
               Learn More
             </Button>
