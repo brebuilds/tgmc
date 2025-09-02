@@ -36,8 +36,8 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
-            <ShinyButton text="Explore the Vision" variant="glass" size="xl" className="animate-pulse-glow" speed={15} />
-            <Button variant="outline" size="xl" className="border-white/30 hover:bg-white/10 text-zinc-900">
+            
+            <Button variant="outline" size="xl" className="border-white/30 hover:bg-white/10 text-sky-800">
               Learn More
             </Button>
           </div>
