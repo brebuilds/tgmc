@@ -41,7 +41,7 @@ const HeroSection = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 items-center max-w-md mx-auto">
-              <input type="email" placeholder="Enter email" className="flex-1 h-12 px-4 rounded-md border border-white/30 bg-white/10 text-white placeholder:text-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 backdrop-blur-sm" />
+              <input type="email" placeholder="Enter email" className="flex-1 h-12 px-4 rounded-md border border-white/30 bg-white/10 text-white text-sm placeholder:text-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 backdrop-blur-sm" />
               <Button variant="outline" size="lg" className="border-white/30 hover:bg-white/10 whitespace-nowrap text-sky-800">
                 Keep me informed!
               </Button>
