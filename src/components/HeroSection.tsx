@@ -36,9 +36,7 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
-            <p className="text-white/90 font-lexend text-lg mb-4">
-              Stay connected as we build the future of care.
-            </p>
+            
             
             <div className="flex flex-col sm:flex-row gap-4 items-center max-w-md mx-auto">
               <input type="email" placeholder="Enter email" className="flex-1 h-12 px-4 rounded-md border border-white/30 bg-white/10 text-white text-sm placeholder:text-white/70 focus:outline-none focus:ring-2 focus:ring-white/50 backdrop-blur-sm" />
