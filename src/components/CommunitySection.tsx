@@ -24,39 +24,45 @@ const CommunitySection = () => {
             </h2>
             
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-6 font-lexend">
-              Designed to meet the growing healthcare needs of the Rio Grande Valley, this hospital ensures residents no longer need to travel for advanced care.
+              Texas General Medical Center is designed to meet the growing healthcare needs of the Rio Grande Valley. Equipped with cutting-edge facilities and a wide range of specialties, it will significantly reduce the need for residents to travel outside the area for advanced medical care.
             </p>
             
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-4">
                 <div className="w-3 h-3 bg-secondary rounded-full animate-pulse"></div>
-                <span className="text-lg font-semibold text-secondary font-lexend">Emergency & Trauma Services</span>
+                <span className="text-lg font-semibold text-secondary font-lexend">300 inpatient beds with advanced acute care services</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-3 h-3 bg-secondary rounded-full animate-pulse" style={{
                 animationDelay: '0.5s'
               }}></div>
-                <span className="text-lg font-semibold text-secondary font-lexend">Advanced Surgical Capabilities</span>
+                <span className="text-lg font-semibold text-secondary font-lexend">Comprehensive specialty care</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-3 h-3 bg-secondary rounded-full animate-pulse" style={{
                 animationDelay: '1s'
               }}></div>
-                <span className="text-lg font-semibold text-secondary font-lexend">Maternal & Pediatric Care</span>
+                <span className="text-lg font-semibold text-secondary font-lexend">A dedicated academic and research center</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-3 h-3 bg-secondary rounded-full animate-pulse" style={{
                 animationDelay: '1.5s'
               }}></div>
-                <span className="text-lg font-semibold text-secondary font-lexend">Comprehensive Specialty Services</span>
+                <span className="text-lg font-semibold text-secondary font-lexend">A surgical innovation campus</span>
+              </div>
+              <div className="flex items-center gap-4">
+                <div className="w-3 h-3 bg-secondary rounded-full animate-pulse" style={{
+                animationDelay: '2s'
+              }}></div>
+                <span className="text-lg font-semibold text-secondary font-lexend">Nearly 4,000 new clinical and support positions</span>
               </div>
             </div>
             
             <blockquote className="border-l-4 border-secondary pl-6 py-4 mb-8 bg-accent/20 rounded-r-lg">
               <p className="text-lg italic text-primary font-lexend mb-2">
-                "All right here in McAllen. No more traveling hundreds of miles for the care your family deserves."
+                "The hospital will offer comprehensive services, including emergency care, surgical services, maternal and pediatric care, and a full spectrum of specialty care."
               </p>
-              <footer className="text-secondary font-semibold font-lexend">— Community Healthcare Promise</footer>
+              <footer className="text-secondary font-semibold font-lexend">— Texas General Medical Center</footer>
             </blockquote>
             
             <Button variant="medical" size="lg">

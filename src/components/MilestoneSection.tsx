@@ -14,11 +14,11 @@ const MilestoneSection = () => {
             </h2>
             
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-6 font-lexend">
-              A major milestone in South Texas is underway as development begins on a 300-bed acute care hospital in McAllen. This facility will redefine patient care, expand access, and create a hub for innovation and education.
+              A major milestone in South Texas is underway as development begins on a new 300-bed acute care hospital in McAllen, bringing advanced medical services, innovative research, and graduate medical education to one of the fastest-growing regions in the nation.
             </p>
             
             <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-lexend">
-              This transformational investment represents the largest healthcare infrastructure project in the Rio Grande Valley's history, bringing world-class medical care directly to our community.
+              Strategically located in North McAllen, the facility will foster strong academic partnerships, enabling medical students, residents, and fellows to train alongside nationally recognized physicians in a state-of-the-art environment.
             </p>
             
             <div className="mt-8 flex flex-wrap gap-4">

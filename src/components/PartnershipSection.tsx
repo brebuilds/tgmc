@@ -7,8 +7,8 @@ const PartnershipSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl sm:text-5xl font-alata font-bold text-primary mb-6">
-            Partnership with{' '}
-            <span className="text-gradient-primary">Ovation Healthcare</span>
+            Leadership{' '}
+            <span className="text-gradient-primary">Vision</span>
           </h2>
         </div>
         
@@ -17,16 +17,16 @@ const PartnershipSection = () => {
           <div className="animate-fade-in">
             <div className="bg-gradient-to-br from-secondary/5 to-accent/10 rounded-2xl p-8 lg:p-12 shadow-card-medical">
               <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-alata font-bold text-primary leading-tight mb-8">
-                "This project represents a <span className="text-gradient-primary">transformational step</span> for the community… delivering world-class healthcare and creating a hub for education, innovation, and research."
+                "We are excited to invest in McAllen and bring a healthcare facility that meets the growing needs of the community. Not only will the hospital deliver <span className="text-gradient-primary">world-class healthcare</span> to the families of the Rio Grande Valley, but it will also create a hub for education, innovation, and research that will shape the next generation of physicians and healthcare leaders."
               </blockquote>
               
               <footer className="flex items-center gap-4">
                 <div className="w-16 h-1 bg-secondary rounded-full"></div>
                 <div>
                   <cite className="text-lg font-semibold text-secondary not-italic font-lexend">
-                    Ovation Healthcare Leadership
+                    Glen Adams
                   </cite>
-                  <p className="text-muted-foreground font-lexend">Healthcare Innovation Partners</p>
+                  <p className="text-muted-foreground font-lexend">CEO, Coaction International Development, Inc.</p>
                 </div>
               </footer>
             </div>

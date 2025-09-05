@@ -22,7 +22,7 @@ const ClosingSection = () => {
           </h2>
           
           <p className="text-xl sm:text-2xl text-muted-foreground max-w-4xl mx-auto font-lexend leading-relaxed mb-12">
-            Join us on this transformational journey as we build not just a hospital, but a beacon of hope, innovation, and world-class care for generations to come.
+            The hospital is expected to open its doors in 2028, with initial construction phases beginning early next year. Join us on this transformational journey as we build not just a hospital, but a beacon of hope, innovation, and world-class care for generations to come.
           </p>
         </div>
         
