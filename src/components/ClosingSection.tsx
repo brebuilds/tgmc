@@ -48,34 +48,6 @@ const ClosingSection = () => {
             </form>
           </div>
         </div>
-        
-        {/* Contact Information */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div className="text-center p-6">
-            <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Mail className="w-8 h-8 text-secondary" />
-            </div>
-            <h4 className="text-lg font-semibold text-primary mb-2 font-alata">Email Updates</h4>
-            <p className="text-muted-foreground font-lexend">info@texasgeneralmedical.com</p>
-          </div>
-          
-          <div className="text-center p-6">
-            <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Phone className="w-8 h-8 text-secondary" />
-            </div>
-            <h4 className="text-lg font-semibold text-primary mb-2 font-alata">Project Inquiries</h4>
-            <p className="text-muted-foreground font-lexend">(123) 456-7890</p>
-          </div>
-          
-          <div className="text-center p-6">
-            <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-              <MapPin className="w-8 h-8 text-secondary" />
-            </div>
-            <h4 className="text-lg font-semibold text-primary mb-2 font-alata">Location</h4>
-            <p className="text-muted-foreground font-lexend">McAllen, Texas</p>
-          </div>
-        </div>
-        
       </div>
       
       {/* Background Decoration */}

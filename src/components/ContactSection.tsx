@@ -77,7 +77,7 @@ const ContactSection = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-gradient-primary mb-6">
             Contact Us
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Ready to be part of the future of healthcare? Get in touch with our team to learn more about partnership opportunities and how you can contribute to this transformative project. Send a message below, or reach</p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Want to be part of the future of healthcare? Get in touch with our team to learn more about future partnership opportunities.</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -88,7 +88,7 @@ const ContactSection = () => {
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <Label htmlFor="name" className="text-sm font-medium">
                       Name <span className="text-destructive">*</span>
@@ -99,19 +99,24 @@ const ContactSection = () => {
                     <Label htmlFor="email" className="text-sm font-medium">
                       Email <span className="text-destructive">*</span>
                     </Label>
-                    
+                    <Input id="email" name="email" type="email" placeholder="your@email.com" value={formData.email} onChange={handleChange} required className="border-input focus:ring-2 focus:ring-primary/20" />
                   </div>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-4">
-                  
-                  <div className="space-y-2">
-                    
-                    <Input id="subject" name="subject" type="text" placeholder="How can we help?" value={formData.subject} onChange={handleChange} className="border-input focus:ring-2 focus:ring-primary/20" />
-                  </div>
+                <div className="space-y-2">
+                  <Label htmlFor="message" className="text-sm font-medium">
+                    Message <span className="text-destructive">*</span>
+                  </Label>
+                  <Textarea 
+                    id="message" 
+                    name="message" 
+                    placeholder="How can we help you?" 
+                    value={formData.message} 
+                    onChange={handleChange} 
+                    required 
+                    className="border-input focus:ring-2 focus:ring-primary/20 min-h-[120px]" 
+                  />
                 </div>
-
-                
 
                 <Button type="submit" disabled={isSubmitting} className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-[1.02] hover-glow">
                   {isSubmitting ? "Sending..." : "Send Message"}
@@ -120,74 +125,20 @@ const ContactSection = () => {
             </CardContent>
           </Card>
 
-          {/* Contact Information */}
-          <div className="space-y-8">
-            <Card className="card-gradient hover-lift">
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-secondary/10 p-3 rounded-lg">
-                    <Mail className="h-6 w-6 text-secondary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-primary mb-2">Email</h3>
-                    <p className="text-muted-foreground">info@texasgeneralmc.com</p>
-                    <p className="text-muted-foreground">partnerships@texasgeneralmc.com</p>
-                  </div>
+          {/* Contact Info Card */}
+          <Card className="card-gradient hover-lift">
+            <CardContent className="p-8 flex flex-col items-center justify-center text-center h-full min-h-[400px]">
+              <div className="space-y-6">
+                <h3 className="text-2xl font-alata font-bold text-primary">
+                  Questions? Call Lisa at
+                </h3>
+                <div className="text-4xl sm:text-5xl font-alata font-bold text-secondary">
+                  (615) 587-7076
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </CardContent>
+          </Card>
 
-            <Card className="card-gradient hover-lift">
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-secondary/10 p-3 rounded-lg">
-                    <Phone className="h-6 w-6 text-secondary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-primary mb-2">Phone</h3>
-                    <p className="text-muted-foreground">Main: (555) 123-4567</p>
-                    <p className="text-muted-foreground">Partnerships: (555) 123-4568</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="card-gradient hover-lift">
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-secondary/10 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-secondary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-primary mb-2">Address</h3>
-                    <p className="text-muted-foreground">
-                      Texas General Medical Center<br />
-                      1234 Healthcare Blvd<br />
-                      Houston, TX 77001
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="card-gradient hover-lift">
-              <CardContent className="p-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-secondary/10 p-3 rounded-lg">
-                    <Clock className="h-6 w-6 text-secondary" />
-                  </div>
-                  <div>
-                    <h3 className="text-lg font-semibold text-primary mb-2">Business Hours</h3>
-                    <p className="text-muted-foreground">
-                      Monday - Friday: 8:00 AM - 6:00 PM<br />
-                      Saturday: 9:00 AM - 4:00 PM<br />
-                      Sunday: Closed
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
         </div>
       </div>
     </section>;
