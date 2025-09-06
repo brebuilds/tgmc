@@ -6,37 +6,37 @@ const statsData = [
     icon: Building2,
     number: '300',
     label: 'Inpatient Beds',
-    description: 'State-of-the-art patient rooms'
+    description: 'State-of-the-art patient care rooms'
   },
   {
     icon: Users,
-    number: '$1B',
+    number: '~$1B',
     label: 'Investment',
-    description: 'Total project investment'
+    description: 'Total project funding + development'
   },
   {
     icon: GraduationCap,
     number: 'Graduate',
     label: 'Medical Education',
-    description: 'Partnership programs'
+    description: 'Partnership-driven trainingprograms'
   },
   {
     icon: Microscope,
     number: 'Research',
     label: 'Academic Center',
-    description: 'Innovation hub'
+    description: 'A hub for discovery & advancement'
   },
   {
     icon: Heart,
     number: 'Surgical',
     label: 'Innovation Campus',
-    description: 'Advanced procedures'
+    description: 'Pioneering advanced procedures'
   },
   {
     icon: Briefcase,
-    number: '1000s',
+    number: '4000+',
     label: 'Jobs Created',
-    description: 'Employment opportunities'
+    description: 'New careers for clinical & support staff'
   }
 ];
 
@@ -49,7 +49,7 @@ const StatsSection = () => {
             Epic Stats & <span className="text-gradient-primary">Highlights</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-lexend">
-            Every number tells a story of transformation, innovation, and hope for our community's healthcare future.
+            Every number tells a story of transformation, progress, and hope for the Rio Grande Valley's healthcare future.
           </p>
         </div>
         

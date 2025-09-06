@@ -3,9 +3,9 @@ import { CalendarDays, MapPin, Users, Building } from 'lucide-react';
 
 const timelineData = [
   {
-    year: '2025',
+    year: '2026',
     title: 'Groundbreaking',
-    description: 'Official groundbreaking ceremony and construction begins',
+    description: 'Official groundbreaking and construction begins',
     icon: MapPin,
     status: 'upcoming'
   },
@@ -16,7 +16,7 @@ const timelineData = [
     icon: Building,
     status: 'future'
   },
-  {
+  { 
     year: '2028',
     title: 'Hospital Opens',
     description: 'Grand opening and first patients welcomed to the new facility',
