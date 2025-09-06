@@ -23,10 +23,11 @@ const CommunitySection = () => {
               <span className="text-gradient-primary">Community Care</span>
             </h2>
             
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed mb-6 font-lexend">
-              Texas General Medical Center is designed to meet the growing healthcare needs of the Rio Grande Valley. Equipped with cutting-edge facilities and a wide range of specialties, it will significantly reduce the need for residents to travel outside the area for advanced medical care.
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-lexend">
+              Texas General Medical Center is designed to meet the growing healthcare needs of Rio Grande Valley. Equipped with state-of-the-art medical facilities and a wide range of specialties, it will significantly reduce the need for residents to travel outside the area for advanced medical care. The hospital will offer comprehensive services including emergency care, surgical services, maternal and pediatric care, and the full range of specialty care. Key features of the hospital will include:
             </p>
-            
+
+
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-4">
                 <div className="w-3 h-3 bg-secondary rounded-full animate-pulse"></div>
@@ -48,13 +49,13 @@ const CommunitySection = () => {
                 <div className="w-3 h-3 bg-secondary rounded-full animate-pulse" style={{
                 animationDelay: '1.5s'
               }}></div>
-                <span className="text-lg font-semibold text-secondary font-lexend">A surgical innovation campus</span>
+                <span className="text-lg font-semibold text-secondary font-lexend">A surgical innovation campus, including outpatient surgery centers</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-3 h-3 bg-secondary rounded-full animate-pulse" style={{
                 animationDelay: '2s'
               }}></div>
-                <span className="text-lg font-semibold text-secondary font-lexend">Nearly 4,000 new clinical and support positions</span>
+                <span className="text-lg font-semibold text-secondary font-lexend">Nearly 4,000 clinical and support positions in the region</span>
               </div>
             </div>
             

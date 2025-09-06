@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ArrowRight, Mail, Phone, MapPin } from 'lucide-react';
+import PartnershipFooter from './PartnershipFooter';
 const ClosingSection = () => {
   const [email, setEmail] = useState('');
   const handleSubmit = (e: React.FormEvent) => {
@@ -10,7 +11,9 @@ const ClosingSection = () => {
     console.log('Email signup:', email);
     setEmail('');
   };
-  return <section className="py-20 lg:py-32 bg-background relative overflow-hidden">
+  return (
+    <>
+      <section className="py-20 lg:py-32 bg-background relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Closing Message */}
         <div className="text-center mb-16">
@@ -22,7 +25,7 @@ const ClosingSection = () => {
           </h2>
           
           <p className="text-xl sm:text-2xl text-muted-foreground max-w-4xl mx-auto font-lexend leading-relaxed mb-12">
-            The hospital is expected to open its doors in 2028, with initial construction phases beginning early next year. Join us on this transformational journey as we build not just a hospital, but a beacon of hope, innovation, and world-class care for generations to come.
+            The hospital is expected to open its doors in 2028, with initial construction phases starting early next year. 
           </p>
         </div>
         
@@ -89,6 +92,11 @@ const ClosingSection = () => {
       {/* Background Decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-secondary/5 rounded-full blur-3xl transform translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl transform -translate-x-1/2 translate-y-1/2"></div>
-    </section>;
+    </section>
+    
+    {/* Partnership Footer */}
+    <PartnershipFooter />
+  </>
+  );
 };
 export default ClosingSection;

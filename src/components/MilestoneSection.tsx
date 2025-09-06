@@ -1,5 +1,5 @@
 import React from 'react';
-import medicalTechImage from '@/assets/medical-technology.jpg';
+import tgmclogo from '@/assets/tgmc-logo.png';
 
 const MilestoneSection = () => {
   return (
@@ -38,15 +38,12 @@ const MilestoneSection = () => {
           </div>
           
           {/* Image */}
-          <div className="animate-fade-in hover-lift">
-            <div className="relative overflow-hidden rounded-2xl shadow-medical">
-              <img 
-                src={medicalTechImage} 
-                alt="Advanced Medical Technology" 
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-            </div>
+          <div className="animate-fade-in">
+            <img 
+              src={tgmclogo} 
+              alt="Texas General Medical Center" 
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </div>

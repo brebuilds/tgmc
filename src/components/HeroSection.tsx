@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import ShinyButton from '@/components/ui/ShinyButton';
 import heroImage from '@/assets/hero-hospital.jpg';
+import texasLogo from '@/assets/texas.png';
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -11,6 +12,15 @@ const HeroSection = () => {
         <div className="absolute inset-0 hero-gradient opacity-85"></div>
       </div>
       
+      {/* Stationary Logo - Upper Left */}
+      <div className="absolute top-6 left-6 z-20">
+        <img 
+          src={texasLogo} 
+          alt="Texas General Medical Center" 
+          className="h-12 w-auto"
+        />
+      </div>
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-secondary/20 rounded-full animate-float blur-xl"></div>
@@ -55,6 +65,7 @@ const HeroSection = () => {
           <path d="M7 6L12 11L17 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
       </div>
+      
     </section>;
 };
 export default HeroSection;
