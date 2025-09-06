@@ -7,7 +7,6 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
-
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -17,47 +16,40 @@ const ContactSection = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
-
+  const {
+    toast
+  } = useToast();
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
     if (!formData.name || !formData.email || !formData.message) {
       toast({
         title: "Please fill in required fields",
         description: "Name, email, and message are required.",
-        variant: "destructive",
+        variant: "destructive"
       });
       return;
     }
-
     setIsSubmitting(true);
-
     try {
-      const { error } = await supabase
-        .from('contact_messages')
-        .insert([
-          {
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone || null,
-            subject: formData.subject || null,
-            message: formData.message
-          }
-        ]);
-
+      const {
+        error
+      } = await supabase.from('contact_messages').insert([{
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone || null,
+        subject: formData.subject || null,
+        message: formData.message
+      }]);
       if (error) throw error;
-
       toast({
         title: "Message sent successfully!",
-        description: "Thank you for contacting us. We'll get back to you soon.",
+        description: "Thank you for contacting us. We'll get back to you soon."
       });
 
       // Reset form
@@ -73,24 +65,19 @@ const ContactSection = () => {
       toast({
         title: "Failed to send message",
         description: "Please try again later or contact us directly.",
-        variant: "destructive",
+        variant: "destructive"
       });
     } finally {
       setIsSubmitting(false);
     }
   };
-
-  return (
-    <section className="py-20 section-gradient">
+  return <section className="py-20 section-gradient">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gradient-primary mb-6">
             Contact Us
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to be part of the future of healthcare? Get in touch with our team to learn more 
-            about partnership opportunities and how you can contribute to this transformative project.
-          </p>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">Ready to be part of the future of healthcare? Get in touch with our team to learn more about partnership opportunities and how you can contribute to this transformative project. Send a message below, or reach</p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -106,31 +93,13 @@ const ContactSection = () => {
                     <Label htmlFor="name" className="text-sm font-medium">
                       Name <span className="text-destructive">*</span>
                     </Label>
-                    <Input
-                      id="name"
-                      name="name"
-                      type="text"
-                      placeholder="Your full name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      required
-                      className="border-input focus:ring-2 focus:ring-primary/20"
-                    />
+                    <Input id="name" name="name" type="text" placeholder="Your full name" value={formData.name} onChange={handleChange} required className="border-input focus:ring-2 focus:ring-primary/20" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="email" className="text-sm font-medium">
                       Email <span className="text-destructive">*</span>
                     </Label>
-                    <Input
-                      id="email"
-                      name="email"
-                      type="email"
-                      placeholder="your.email@example.com"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                      className="border-input focus:ring-2 focus:ring-primary/20"
-                    />
+                    <Input id="email" name="email" type="email" placeholder="your.email@example.com" value={formData.email} onChange={handleChange} required className="border-input focus:ring-2 focus:ring-primary/20" />
                   </div>
                 </div>
 
@@ -139,29 +108,13 @@ const ContactSection = () => {
                     <Label htmlFor="phone" className="text-sm font-medium">
                       Phone
                     </Label>
-                    <Input
-                      id="phone"
-                      name="phone"
-                      type="tel"
-                      placeholder="(555) 123-4567"
-                      value={formData.phone}
-                      onChange={handleChange}
-                      className="border-input focus:ring-2 focus:ring-primary/20"
-                    />
+                    <Input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" value={formData.phone} onChange={handleChange} className="border-input focus:ring-2 focus:ring-primary/20" />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="subject" className="text-sm font-medium">
                       Subject
                     </Label>
-                    <Input
-                      id="subject"
-                      name="subject"
-                      type="text"
-                      placeholder="How can we help?"
-                      value={formData.subject}
-                      onChange={handleChange}
-                      className="border-input focus:ring-2 focus:ring-primary/20"
-                    />
+                    <Input id="subject" name="subject" type="text" placeholder="How can we help?" value={formData.subject} onChange={handleChange} className="border-input focus:ring-2 focus:ring-primary/20" />
                   </div>
                 </div>
 
@@ -169,23 +122,10 @@ const ContactSection = () => {
                   <Label htmlFor="message" className="text-sm font-medium">
                     Message <span className="text-destructive">*</span>
                   </Label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell us about your interest in TGMC or any questions you have..."
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="border-input focus:ring-2 focus:ring-primary/20 resize-none"
-                  />
+                  <Textarea id="message" name="message" placeholder="Tell us about your interest in TGMC or any questions you have..." value={formData.message} onChange={handleChange} required rows={5} className="border-input focus:ring-2 focus:ring-primary/20 resize-none" />
                 </div>
 
-                <Button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-[1.02] hover-glow"
-                >
+                <Button type="submit" disabled={isSubmitting} className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-[1.02] hover-glow">
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
@@ -262,8 +202,6 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
