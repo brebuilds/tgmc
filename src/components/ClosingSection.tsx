@@ -78,15 +78,6 @@ const ClosingSection = () => {
           </div>
         </div>
         
-        {/* Footer */}
-        <div className="border-t border-border pt-8 text-center">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-2xl font-bold text-primary font-alata">
-              Texas General Medical Center
-            </div>
-            <div className="text-muted-foreground font-lexend">© 2025 Texas General Medical Center. All rights reserved.</div>
-          </div>
-        </div>
       </div>
       
       {/* Background Decoration */}
@@ -96,7 +87,19 @@ const ClosingSection = () => {
     
     {/* Partnership Footer */}
     <PartnershipFooter />
+    
+    {/* Footer */}
+    <div className="bg-background border-t border-border py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center">
+          <div className="text-2xl font-bold text-primary font-alata">
+            Texas General Medical Center
+          </div>
+          <div className="text-muted-foreground font-lexend">© 2025 Texas General Medical Center. All rights reserved.</div>
+        </div>
+      </div>
+    </div>
   </>
-  );
+   );
 };
 export default ClosingSection;
