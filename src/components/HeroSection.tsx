@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import ShinyButton from '@/components/ui/ShinyButton';
 import heroImage from '@/assets/hero-hospital.jpg';
-import tgmclogo from '@/assets/tgmc-logo.png';
+import texasLogo from '@/assets/texas.png';
 const HeroSection = () => {
   return <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -15,9 +15,9 @@ const HeroSection = () => {
       {/* Stationary Logo - Upper Left */}
       <div className="absolute top-6 left-6 z-20">
         <img 
-          src={tgmclogo} 
+          src={texasLogo} 
           alt="Texas General Medical Center" 
-          className="h-16 w-auto"
+          className="h-12 w-auto"
         />
       </div>
 
