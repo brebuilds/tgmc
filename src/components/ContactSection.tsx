@@ -99,7 +99,7 @@ const ContactSection = () => {
                     <Label htmlFor="email" className="text-sm font-medium">
                       Email <span className="text-destructive">*</span>
                     </Label>
-                    <Input id="email" name="email" type="email" placeholder="your.email@example.com" value={formData.email} onChange={handleChange} required className="border-input focus:ring-2 focus:ring-primary/20" />
+                    
                   </div>
                 </div>
 
