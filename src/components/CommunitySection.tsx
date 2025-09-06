@@ -59,8 +59,9 @@ const CommunitySection = () => {
               </div>
             </div>
             
-            
-            
+            <p className="text-lg text-muted-foreground leading-relaxed font-lexend mt-8">
+              This transformative healthcare investment represents more than just a hospital—it's a commitment to the future of South Texas. By combining advanced medical care with education and research, Texas General Medical Center will establish the Rio Grande Valley as a premier destination for healthcare excellence, ensuring that families can receive world-class treatment close to home while fostering the next generation of medical professionals.
+            </p>
             
           </div>
         </div>
