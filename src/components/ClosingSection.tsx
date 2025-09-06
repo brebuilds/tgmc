@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { ArrowRight, Mail, Phone, MapPin } from 'lucide-react';
-
 const ClosingSection = () => {
   const [email, setEmail] = useState('');
   const handleSubmit = (e: React.FormEvent) => {
@@ -11,8 +10,7 @@ const ClosingSection = () => {
     console.log('Email signup:', email);
     setEmail('');
   };
-  return (
-    <>
+  return <>
       <section className="py-20 lg:py-32 bg-background relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Main Closing Message */}
@@ -66,7 +64,7 @@ const ClosingSection = () => {
               <Phone className="w-8 h-8 text-secondary" />
             </div>
             <h4 className="text-lg font-semibold text-primary mb-2 font-alata">Project Inquiries</h4>
-            <p className="text-muted-foreground font-lexend">(956) 555-0123</p>
+            <p className="text-muted-foreground font-lexend">(123) 456-7890</p>
           </div>
           
           <div className="text-center p-6">
@@ -96,7 +94,6 @@ const ClosingSection = () => {
         </div>
       </div>
     </div>
-  </>
-   );
+  </>;
 };
 export default ClosingSection;
