@@ -23,10 +23,8 @@ const CommunitySection = () => {
               <span className="text-gradient-primary">Community Care</span>
             </h2>
             
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-lexend">Texas General Medical Center is designed to meet the growing healthcare needs of Rio Grande Valley. Equipped with state-of-the-art medical facilities and a wide range of specialties, it will significantly reduce the need for residents to travel outside the area for advanced medical care. Key features of the hospital will include:
-
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-lexend mb-6">Texas General Medical Center is designed to meet the growing healthcare needs of Rio Grande Valley. Equipped with state-of-the-art medical facilities and a wide range of specialties, it will significantly reduce the need for residents to travel outside the area for advanced medical care. Key features of the hospital will include:
           </p>
-
 
             <div className="space-y-4 mb-8">
               <div className="flex items-center gap-4">
