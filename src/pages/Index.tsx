@@ -6,6 +6,7 @@ import CommunitySection from '@/components/CommunitySection';
 import PartnershipSection from '@/components/PartnershipSection';
 import PartnershipFooter from '@/components/PartnershipFooter';
 import TimelineSection from '@/components/TimelineSection';
+import ContactSection from '@/components/ContactSection';
 import ClosingSection from '@/components/ClosingSection';
 
 const Index = () => {
@@ -18,6 +19,7 @@ const Index = () => {
       <PartnershipSection />
       <PartnershipFooter />
       <TimelineSection />
+      <ContactSection />
       <ClosingSection />
     </main>
   );
