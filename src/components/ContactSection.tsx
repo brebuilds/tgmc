@@ -104,26 +104,14 @@ const ContactSection = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-4">
+                  
                   <div className="space-y-2">
-                    <Label htmlFor="phone" className="text-sm font-medium">
-                      Phone
-                    </Label>
-                    <Input id="phone" name="phone" type="tel" placeholder="(555) 123-4567" value={formData.phone} onChange={handleChange} className="border-input focus:ring-2 focus:ring-primary/20" />
-                  </div>
-                  <div className="space-y-2">
-                    <Label htmlFor="subject" className="text-sm font-medium">
-                      Subject
-                    </Label>
+                    
                     <Input id="subject" name="subject" type="text" placeholder="How can we help?" value={formData.subject} onChange={handleChange} className="border-input focus:ring-2 focus:ring-primary/20" />
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="message" className="text-sm font-medium">
-                    Message <span className="text-destructive">*</span>
-                  </Label>
-                  <Textarea id="message" name="message" placeholder="Tell us about your interest in TGMC or any questions you have..." value={formData.message} onChange={handleChange} required rows={5} className="border-input focus:ring-2 focus:ring-primary/20 resize-none" />
-                </div>
+                
 
                 <Button type="submit" disabled={isSubmitting} className="w-full bg-primary hover:bg-primary-glow text-primary-foreground font-semibold py-3 px-6 rounded-lg transition-all duration-300 hover:scale-[1.02] hover-glow">
                   {isSubmitting ? "Sending..." : "Send Message"}
