@@ -4,6 +4,7 @@ import MilestoneSection from '@/components/MilestoneSection';
 import StatsSection from '@/components/StatsSection';
 import CommunitySection from '@/components/CommunitySection';
 import PartnershipSection from '@/components/PartnershipSection';
+import PartnershipFooter from '@/components/PartnershipFooter';
 import TimelineSection from '@/components/TimelineSection';
 import ClosingSection from '@/components/ClosingSection';
 
@@ -15,6 +16,7 @@ const Index = () => {
       <StatsSection />
       <CommunitySection />
       <PartnershipSection />
+      <PartnershipFooter />
       <TimelineSection />
       <ClosingSection />
     </main>
