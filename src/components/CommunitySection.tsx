@@ -23,9 +23,9 @@ const CommunitySection = () => {
               <span className="text-gradient-primary">Community Care</span>
             </h2>
             
-            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-lexend">
-              Texas General Medical Center is designed to meet the growing healthcare needs of Rio Grande Valley. Equipped with state-of-the-art medical facilities and a wide range of specialties, it will significantly reduce the need for residents to travel outside the area for advanced medical care. The hospital will offer comprehensive services including emergency care, surgical services, maternal and pediatric care, and the full range of specialty care. Key features of the hospital will include:
-            </p>
+            <p className="text-lg sm:text-xl text-muted-foreground leading-relaxed font-lexend">Texas General Medical Center is designed to meet the growing healthcare needs of Rio Grande Valley. Equipped with state-of-the-art medical facilities and a wide range of specialties, it will significantly reduce the need for residents to travel outside the area for advanced medical care. Key features of the hospital will include:
+
+          </p>
 
 
             <div className="space-y-4 mb-8">
@@ -59,16 +59,9 @@ const CommunitySection = () => {
               </div>
             </div>
             
-            <blockquote className="border-l-4 border-secondary pl-6 py-4 mb-8 bg-accent/20 rounded-r-lg">
-              <p className="text-lg italic text-primary font-lexend mb-2">
-                "The hospital will offer comprehensive services, including emergency care, surgical services, maternal and pediatric care, and a full spectrum of specialty care."
-              </p>
-              <footer className="text-secondary font-semibold font-lexend">— Texas General Medical Center</footer>
-            </blockquote>
             
-            <Button variant="medical" size="lg">
-              Learn About Services
-            </Button>
+            
+            
           </div>
         </div>
       </div>
