@@ -76,7 +76,7 @@ const statsData = [
     icon: GraduationCap,
     number: 'Graduate',
     label: 'Medical Education',
-    description: 'Partnership-driven trainingprograms'
+    description: 'Partnership-driven training programs'
   },
   {
     icon: Microscope,
