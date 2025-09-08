@@ -33,19 +33,23 @@ const HeroSection = () => {
       </div>
       
       {/* Main Content */}
-      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
-        <div className="animate-slide-up">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-alata font-bold mb-6 leading-tight">
-            New 300-Bed Acute Care Hospital to{' '}
-            <span className="text-gradient-secondary">Transform Healthcare</span>{' '}
-            in Rio Grande Valley
-          </h1>
-          
-          <p className="text-xl sm:text-2xl lg:text-3xl mb-8 font-lexend font-light max-w-4xl mx-auto leading-relaxed opacity-95">
-            Texas General Medical Center, a nearly <span className="font-semibold text-accent">$1 billion investment</span>, will serve as a cornerstone for both patient care and medical education in the Rio Grande Valley.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
+<div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+  <div className="animate-slide-up">
+    <h1 className="text-5xl sm:text-6xl lg:text-7xl font-alata font-bold mb-6 leading-tight">
+      New 300-Bed Acute Care Hospital to Transform Healthcare in Rio Grande Valley
+    </h1>
+    
+    <p className="text-xl sm:text-2xl lg:text-3xl mb-8 font-lexend font-light max-w-4xl mx-auto leading-relaxed opacity-95">
+      Texas General Medical Center, a nearly 
+      <span className="font-semibold">$1 billion investment</span>, 
+      will serve as a cornerstone for both patient care and medical education in the Rio Grande Valley.
+    </p>
+    
+    <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
+      {/* buttons/links/etc */}
+    </div>
+  </div>
+</div>
             
             
             <div className="flex flex-col sm:flex-row gap-4 items-center max-w-md mx-auto">
