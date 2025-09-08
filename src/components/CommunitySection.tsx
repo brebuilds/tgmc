@@ -96,7 +96,7 @@ const CommunitySection = () => {
             </div>
             
             <p className="text-lg text-muted-foreground leading-relaxed font-lexend mt-8">
-              With Valley's population and healthcare demands rapidly increasing, the new hospital is designed to expand access to care, attract top-tier medical talent, and improve health outcomes across South Texas.
+              With the Rio Grande Valley's population and healthcare demands rapidly increasing, the new hospital is designed to expand access to care, attract top-tier medical talent, and improve health outcomes across South Texas.
             </p>
             
           </div>
