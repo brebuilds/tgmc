@@ -1,15 +1,9 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Button } from '@/components/ui/button';
 import heroImage from '@/assets/hero-hospital.jpg';
 import texasLogo from '@/assets/texas.png';
 
-const HeroSection = ({ nextSectionRef }) => {
-  const handleScrollToNextSection = () => {
-    if (nextSectionRef && nextSectionRef.current) {
-      nextSectionRef.current.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
+const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
@@ -61,14 +55,19 @@ const HeroSection = ({ nextSectionRef }) => {
             for both patient care and medical education in the Rio Grande Valley.
           </p>
 
-          <div className="flex justify-center items-center mt-12">
+          {/* Email Signup Form */}
+          <div className="flex flex-col sm:flex-row gap-4 items-center max-w-md mx-auto mt-12">
+            <input
+              type="email"
+              placeholder="Enter email"
+              className="flex-1 h-12 px-4 rounded-md border border-gray-400 bg-white/20 text-white text-sm placeholder:text-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+            />
             <Button
-              variant="outline"
+              variant="default"
               size="lg"
-              className="border-white/30 hover:bg-white/10 whitespace-nowrap text-white"
-              onClick={handleScrollToNextSection}
+              className="w-full sm:w-auto bg-primary hover:bg-primary/90 whitespace-nowrap text-white"
             >
-              Learn More
+              Keep me informed!
             </Button>
           </div>
         </div>
