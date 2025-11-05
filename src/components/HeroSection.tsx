@@ -50,8 +50,8 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-xl sm:text-2xl lg:text-3xl mb-8 font-lexend font-light max-w-4xl mx-auto leading-relaxed opacity-95">
-            Texas General Medical Center, a nearly{' '}
-            <span className="font-semibold">$1 billion investment</span>, will serve as a cornerstone
+            Texas General Medical Center, a{' '}
+            <span className="font-semibold">$1.5 billion investment</span>, will serve as a cornerstone
             for both patient care and medical education in the Rio Grande Valley.
           </p>
 
